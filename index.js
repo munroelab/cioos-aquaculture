@@ -342,8 +342,10 @@ var legend = L.control({ position: "topright"});
 legend.onAdd = function(map) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Legend</h4>";
-  div.innerHTML += '<i style="background: #FF7800"></i><span>Aquaculture Licence</span><br>';
-  div.innerHTML += '<i style="background: #007800"></i><span>Processor</span><br>';
+  div.innerHTML += '<i style="background: #FF7800"></i><span>2019 Licensed Aquaculture Sites</span><br>';
+  div.innerHTML += '<i style="background: #007800"></i><span>2019 Licensed Processors</span><br>';
+
+  div.innerHTML += '<a href="https://opendata.gov.nl.ca/public/opendata/page/?page-id=licence">The Open Government Licence -<br> Newfoundland and Labrador</a>.<br>';
   return div;
 };
 
